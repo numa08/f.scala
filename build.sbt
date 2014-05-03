@@ -8,6 +8,8 @@ version := "0.1.0"
 
 scalaVersion := "2.11.0"
 
+scalacOptions ++= Seq("-Xlint")
+
 libraryDependencies ++= Seq(
   "com.github.aselab" % "scala-activerecord_2.10" % "0.2.3",
   "org.slf4j" % "slf4j-nop" % "1.7.5",
