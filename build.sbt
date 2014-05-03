@@ -14,3 +14,5 @@ libraryDependencies ++= Seq(
   "com.h2database" % "h2" % "1.3.173"
 )
 
+libraryDependencies += "org.rogach" %% "scallop" % "0.9.5"
+
