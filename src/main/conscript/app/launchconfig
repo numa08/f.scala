@@ -1,7 +1,7 @@
 [app]
   version: 0.1.0
   org: net.numa08.f_scala
-  name: f.scala
+  name: f_scala
   class: net.numa08.f_scala.f
 [scala]
   version: 2.11.0
