@@ -4,7 +4,7 @@ organization := "net.numa08.f_scala"
 
 name := "f_scala"
 
-version := "0.1.0"
+version := "0.1.1"
 
 scalaVersion := "2.11.0"
 
