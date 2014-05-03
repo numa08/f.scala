@@ -16,3 +16,5 @@ libraryDependencies ++= Seq(
 
 libraryDependencies += "org.rogach" %% "scallop" % "0.9.5"
 
+libraryDependencies += "org.scalatest" %% "scalatest" % "2.1.5" % "test"
+
