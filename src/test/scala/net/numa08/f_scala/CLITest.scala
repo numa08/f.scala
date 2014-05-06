@@ -59,4 +59,24 @@ class CLITest extends UsefulMatchers {
     val cli = new CLI(Seq("book", "--number", "100"))
     cli.book.number.get ==== Some(100)
   }
+
+  test("work filter by title (short)") {
+    val cli = new CLI(Seq("work", "-t", "doraemon"))
+    cli.work.title.get ==== Some("doraemon")
+  }
+
+  test("work filter by title") {
+    val cli = new CLI(Seq("work", "--title", "doraemon"))
+    cli.work.title.get ==== Some("doraemon")
+  }
+
+  test("work filter by year (short)") {
+    val cli = new CLI(Seq("work", "-y", "s63"))
+    cli.work.year.get ==== Some("s63")
+  }
+
+  test("work filter by year") {
+    val cli = new CLI(Seq("work", "--year", "s63"))
+    cli.work.year.get === Some("s63")
+  }
 }

@@ -13,7 +13,11 @@ class CLI(args: Seq[String] = Seq("--help")) extends ScallopConf(args) {
     val title = opt[String]()
     val number = opt[Int](validate = (0<))
   }
-  val work = new Subcommand("work")
+
+  val work = new Subcommand("work") {
+    val title = opt[String]()
+    val year = opt[String]()
+  }
 
   version("f.scala 0.1.0 (c) 2014 numa numa08")
   banner(
