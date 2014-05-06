@@ -4,4 +4,6 @@ class FDatabase {
 
 }
 
-object FDatabase extends DatabaseInitializer
+object FDatabase extends DatabaseInitializer {
+  val SEASON_LAST = 4
+}
