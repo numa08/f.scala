@@ -27,10 +27,14 @@ object f {
         FDatabase.init
         0
       }
-      case Some(cli.book) =>
-        println("book"); 0
-      case Some(cli.work) =>
-        println("workd"); 0
+      case Some(cli.book) => {
+        FDatabase.Book(cli.book.season.get, cli.book.serial.get, cli.book.title.get, cli.book.number.get).filter
+        0
+      }
+      case Some(cli.work) => {
+        FDatabase.Work(cli.work.title.get, cli.work.year.get).filter
+        0
+      }
       case _ => 1
     }
   }
