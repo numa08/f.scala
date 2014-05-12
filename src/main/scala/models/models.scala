@@ -3,7 +3,7 @@ package models
 import com.github.aselab.activerecord.{ ActiveRecordTables, ActiveRecordCompanion, ActiveRecord }
 import com.github.aselab.activerecord.dsl._
 
-case class Book(title: String, number: Int, serial: Int) extends ActiveRecord {
+case class Book(title: String, number: Int, serial: Int, season : Int) extends ActiveRecord {
   lazy val works = hasMany[Work]
 }
 
